@@ -1,6 +1,5 @@
-'use strict';
+"use strict";
 
-document.querySelector(".puzzle").addEventListener("click", () => {
-    alert("You found it! The secret word is 'Love'. 💕");
+document.querySelector(".keyword").addEventListener("click", () => {
+  alert("Ljubav!!! Cuo sam da zelis da me vidis, ubrzacu! 42 💕");
 });
-
