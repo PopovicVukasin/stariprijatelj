@@ -40,18 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Easter egg: Konami code implementation
-  const konamiCode = [
-    "ArrowUp",
-    "ArrowUp",
-    "ArrowDown",
-    "ArrowDown",
-    "ArrowLeft",
-    "ArrowRight",
-    "ArrowLeft",
-    "ArrowRight",
-    "b",
-    "a",
-  ];
+  const konamiCode = ["l", "j", "u", "b", "a", "v"];
   let konamiProgress = 0;
 
   document.addEventListener("keydown", (e) => {
@@ -157,10 +146,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const tapLength = currentTime - lastTap;
     if (tapLength < 500 && tapLength > 0) {
       const hiddenMessage = document.querySelector(".hidden-message");
-      hiddenMessage.style.opacity = "1";
+      hiddenMessage.style.opacity = "0.4";
       setTimeout(() => {
-        hiddenMessage.style.opacity = "0.7";
-      }, 2000);
+        hiddenMessage.style.opacity = "0.05";
+      }, 100);
     }
     lastTap = currentTime;
   });
